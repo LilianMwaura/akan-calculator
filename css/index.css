@@ -24,4 +24,13 @@ h1 {
     font-size: larger;
     font-weight: bold;
     text-align: center;
+    display: inline-block;
+    width: 20%;
+    padding-left: 3%;
+    padding-right: 10%;
+    cursor: pointer;
+    border-left: 1px solid white;
+    margin-right: 30px;
+    text-transform: uppercase;
+    list-style-type: none;
 }
