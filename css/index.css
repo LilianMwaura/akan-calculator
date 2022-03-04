@@ -38,6 +38,14 @@ h1 {
 
 }
 .about {
-    padding-top: 5%;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+.names {
+    padding-left: 7%;
+    display: flex;
+}
+.last-paragraph {
+    padding-top: 0.7%;
     padding-left: 5%;
 }
