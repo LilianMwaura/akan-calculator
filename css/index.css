@@ -1,3 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #b7b7b7;
+}
+body {
+    background-color: black;
+  }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #332323;
+}
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
