@@ -4,14 +4,14 @@ body {
 }
 
 .container {
-  width: 50%;
+  width: 60%;
 
 }
 
 .jumbotron {
 
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: #c300ff;
+  color: #111010;
 }
 
 form p {

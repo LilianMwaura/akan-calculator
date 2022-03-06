@@ -1,135 +1,79 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/index.css">
-     <title>Akan Calculator</title>
- </head>
- <body>
-    <h1>Akan Calculator</h1>
-    <header>
-    <div class="nav-bar">
-        <a class ="active" href="#about">About</a>
-        <a href="#Calculator">Calculator</a>
-    </div>
-    </header>
-    <p>
-    <div class="about">
-        <a href="#about"><h2>About</h2></a>
-    </p>
-    <p>
-        <h3>Have you ever wondered what day of the week you were born on?</h3>
-    </p>
-    <p> I bet most of you have no idea what day of the week you were born on.</p>
-    <p>Ghanians have a beautiful culture where they give their children first names as a 'day name'which <br> corresponds to the day in the week they were born. <br> The names vary with gender, having different names for males and females.</p>
-    <p>These are called <em>Akan Names.</em> <br>
-        <b>Here are the Ghanian day names.</b>
-    </p>
-    </div>
-    <div class="names">
-    <p>
-        <h3>Male</h3>
-        <ul>
-            <li>Sunday: Kwasi</li> 
-            <li>Monday: Kwadwo</li> 
-            <li>Tuesday: Kwabena</li>
-            <li>Wednesday: Kwaku</li>
-            <li>Thursday: Yaw</li> 
-            <li>Friday: Kofi</li>
-            <li>Saturday: Kwame</li>
-        </ul>
-        <h3>Female</h3>
-        <ul>
-            <li>Sunday: Akosua</li> 
-            <li>Monday: Adwoa</li> 
-            <li>Tuesday: Abenaa</li>
-            <li>Wednesday: Akua</li>
-            <li>Thursday: Yaa</li>
-            <li>Friday: Afua</li>
-            <li> Saturday: Ama</li>
-        </ul>
-    </p>
-    </div>
-    <div class="last-paragraph">
-        <p>
-            <i>Beatiful names aren't they? I'm sure you're curiuos to find out your Akan name, or that of a loved one.<br>
-            Use this simple Akan calculator to find out your Akan name based on your gender and birthday.</i>
-        </p>
-    </div>
-    <div class="calculator">
-        <a href="#calculator"><h2> Akan Calculator</h2></a>
-    </div>
-<div class = "data-input">
-    <h2>Enter your birthday</h2>
-    <form action="scripts/script.js" method="prompt"> 
-        <label for="birthdate"> Select your birthdate</label> <br>
-    <select name="Date" id="date">
-            <option value="none">-</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-    </select>
-</p>
-<p>
-    <label for="birthmonth">Select your birth month</label> <br>
-    <select name="Month" id="month">
-        <option value="january">January</option>
-        <option value="february">February</option>
-        <option value="march">March</option>
-        <option value="april">April</option>
-        <option value="may">May</option>
-        <option value="june">June</option>
-        <option value="july">July</option>
-        <option value="august">August</option>
-        <option value="september">September</option>
-        <option value="october">October</option>
-        <option value="november">November</option>
-        <option value="december">December</option>
-    </select>
-</p>
-<p>
-    <label for="birthyear">Enter your birth year</label> <br>
-    <input type="text" id="year">
-</p>
-<p>
-    <label for="gender"> Select your gender</label> <br>
-    <input type="radio" name="gender" value="male"> Male <br>
-    <input type="radio" name="gender" value="female"> Female <br>
-</p>
-<button onclick="displayAkanName"> Find Out</button>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    </form>
-    <script src="/scripts/script.js"></script>
+    <script src="scripts.js"></script>
+    <title>What is Your Ghanian Day Name?</title>
+  </head>
+  <body>
+      
+    <div class="jumbotron">
+      <h1>
+        Find out your Akan Name?
+      </h1>
+      </div>
+
+      <form name="birthday_form">
+        <p>People from Ghana name their children after the day they were born. Enter your birthday & gender below
+        and click submit to find out your Akan name.
+        </p>
+        <p> I bet most of you have no idea what day of the week you were born on.
+
+          Ghanians have a beautiful culture where they give their children first names as a 'day name'which
+          corresponds to the day in the week they were born.
+          The names vary with gender, having different names for males and females.
+          
+          These are called Akan Names.
+          <br>Here are the Ghanian day names.</br>
+
+          <p>
+            <h3>Male</h3>
+            <ul>
+                <li>Sunday: Kwasi</li> 
+                <li>Monday: Kwadwo</li> 
+                <li>Tuesday: Kwabena</li>
+                <li>Wednesday: Kwaku</li>
+                <li>Thursday: Yaw</li> 
+                <li>Friday: Kofi</li>
+                <li>Saturday: Kwame</li>
+            </ul>
+            <h3>Female</h3>
+            <ul>
+                <li>Sunday: Akosua</li> 
+                <li>Monday: Adwoa</li> 
+                <li>Tuesday: Abenaa</li>
+                <li>Wednesday: Akua</li>
+                <li>Thursday: Yaa</li>
+                <li>Friday: Afua</li>
+                <li> Saturday: Ama</li>
+            </ul>
+        </p>
+
+        <p>Beatiful names aren't they? I'm sure you're curiuos to find out your Akan name, or that of a loved one.
+          Use this simple Akan calculator to find out your Akan name based on your gender and birthday.</p>
+        </p>
+        <p>Enter your birthday date to find out your Akan name.</p>
+
+        <br>
+        <div class="form-group">
+          <label for="date">Enter your birthday</label>
+          <input type="text" class="form-control" id="userBirthday" placeholder="dd/mm/yyyy">
+        </div>
+        <label for="gender">Select your Gender</label>
+        <select class="form-control" id="userGender">
+          <option>Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+        <br>
+        <br>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary btn-block" onclick="dayCalculator()">Submit</button>
+        </div>
+      </form>
     </div>
- </body>
- </html>
+  </body>
+</html>
