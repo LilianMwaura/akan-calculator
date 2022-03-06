@@ -1,0 +1,19 @@
+
+body {
+  background-color: #f0faf5;
+}
+
+.container {
+  width: 50%;
+
+}
+
+.jumbotron {
+
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+form p {
+  text-align: justify;
+}
